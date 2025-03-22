@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Fake News Detection</title>
+
+    <style>
+      /* Styling for the box */
+      .popup-box {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        will-change: transform, box-shadow;
+        width: 90%; /* Increase the width of the box */
+        max-width: 1000px; /* Set a maximum width for the box */
+        margin: 0 auto; /* Center the box horizontally */
+        background-color: #d9d8d8; /* Light gray background inside the box */
+        padding: 40px; /* Add padding inside the box */
+        border-radius: 20px; /* Rounded corners */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Initial box shadow */
+        border: 2px solid #fff; /* White border around the box */
+      }
+
+      .popup-box:hover {
+        transform: scale(1.05); /* Slightly increase the size of the box */
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow when hovering */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text-gray-600 body-font -my-8">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">Fake News Detection</span>
+        </a>
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <a href="/" class="mr-5 hover:text-gray-900">Home</a>
+          <a href="/" class="mr-5 hover:text-gray-900">About us</a>
+          <a href="/prediction" class="mr-5 hover:text-gray-900">Prediction</a>
+          <a class="mr-5 hover:text-gray-900">Contact us</a>
+        </nav>
+      </div>
+    </header><hr>
+    
+    <!-- Main Content Box -->
+    <section class="body-font -my-8">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="popup-box">
+          <!-- Title and Description -->
+          <div class="flex flex-col text-center w-full mb-8">
+            <h2 class="text-xs text-green-500 tracking-widest font-medium title-font mb-1">Machine learning project</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Fake News Detection</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">We aim to provide the user with the ability to classify the news as Fake or Real <br>and also check the authenticity of the website publishing the news.</p>
+          </div>
+
+          <!-- Prediction Result and GIF -->
+          <div class="text-center">
+            <p class="text-primary"><b>{{prediction_text}}</b></p>
+            {% if gif_path %}
+            <img src="{{ gif_path }}" alt="Prediction Result" class="img-fluid mx-auto d-block mb-4">
+            {% endif %}
+          </div>
+
+          <!-- News Input Form -->
+          <form action="/prediction" method="POST">
+            <div class="mb-3">
+              <label for="news" class="form-label ">Enter news headlines</label>
+              <input type="text" class="form-control" id="news" name="news" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit"  class="inline-flex text-white bg-green-500 border-0 py-3 px-8 focus:outline-none hover:bg-green-600 rounded-lg text-lg shadow-lg transition duration-300 transform hover:scale-105">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>

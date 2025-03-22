@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section */
+header {
+    background-color: #1E40AF;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.25rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+}
+
+#about h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+/* Prediction Section */
+#prediction {
+    background-color: #F3F4F6;
+}
+
+#prediction h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#prediction form input {
+    width: 50%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+
+#prediction form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    background-color: #3B82F6;
+    border-radius: 9999px;
+    color: white;
+}
+
+/* Testimonial Section */
+#testimonials {
+    background-color: #ffffff;
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#testimonials .w-64 {
+    max-width: 100%;
+    margin: 0 2rem;
+}
+
+#testimonials .p-4 {
+    background-color: #F9FAFB;
+    border-radius: 10px;
+}
+
+#testimonials img {
+    border-radius: 50%;
+}
+
+#testimonials .font-bold {
+    font-weight: bold;
+}
+
+#testimonials p {
+    margin-top: 0.5rem;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1E40AF;
+}
+
+footer p {
+    font-size: 1rem;
+}
