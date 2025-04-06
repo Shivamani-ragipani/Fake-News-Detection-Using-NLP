@@ -11,8 +11,12 @@
       n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
     }(window, document);
   </script>
-  <link href="https://cdn.prod.website-files.com/670cdd2e0c5037ee26ccf971/670cec32087d78662c77b913_favicon.gif" rel="shortcut icon" type="image/x-icon" />
-  <link href="https://cdn.prod.website-files.com/670cdd2e0c5037ee26ccf971/670cec37458eb6b182256730_webclip.gif" rel="apple-touch-icon" />
+  <link rel="icon" href="../static/LogoS_transparent-Photoroom.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="../static/LogoS_transparent-Photoroom.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="../static/LogoS_transparent-Photoroom.png" type="image/png" sizes="48x48">
+  <link rel="icon" href="../static/LogoS_transparent-Photoroom.png" type="image/png" sizes="64x64">
+  <link rel="icon" href="../static/LogoS_transparent-Photoroom.png" type="image/png" sizes="128x128">
+  <link rel="icon" href="../static/LogoS_transparent-Photoroom.png" type="image/png" sizes="256x256">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Required meta tags -->
@@ -31,9 +35,7 @@
   <header class="text-gray-600 body-font -my-8">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
+        <img src="../static/LogoS.png" alt="Logo" class="w-10 h-10 rounded-full">
         <span class="ml-3 text-xl transition-all duration-300 transform hover:text-green-400 hover:scale-105">Fake News Detection</span>
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -62,11 +64,17 @@
           Our purpose is to enhance information quality, empower users to make informed decisions, support news outlets in upholding credibility, and encourage social media responsibility by flagging fake news.
         </p>
         <!-- Call to Action -->
-        <div class="flex justify-start">
+        <div class="flex justify-start space-x-4">
           <a href="/prediction">
             <button
               class="inline-flex text-white bg-green-500 border-0 py-3 px-8 focus:outline-none hover:bg-green-600 rounded-lg text-lg shadow-lg transition duration-300 transform hover:scale-105">
               Start Prediction
+            </button>
+          </a>
+          <a href="https://drive.google.com/file/d/1K4GWfpAg_d5pYFF4rpJVhDHz2zN1En5h/view?usp=drive_link" download>
+            <button
+              class="inline-flex text-white bg-blue-500 border-0 py-3 px-8 focus:outline-none hover:bg-blue-600 rounded-lg text-lg shadow-lg transition duration-300 transform hover:scale-105">
+              Download Dataset
             </button>
           </a>
         </div>
@@ -159,14 +167,14 @@
                             d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
                         </path>
                     </svg>
-                    <p class="leading-relaxed mb-6">Content of the Reviewer</p>
+                    <p class="leading-relaxed mb-6">This project showcases excellent teamwork and technical skills. The integration of NLP and machine learning is impressive, and the user-friendly interface makes it highly practical.</p>
                     <a class="inline-flex items-center">
-                        <img alt="testimonial" src="https://dummyimage.com/108x108"
-                            class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                        <span class="flex-grow flex flex-col pl-4">
-                            <span class="title-font font-medium text-gray-900">Name Of the Faculty</span>
-                            <span class="text-gray-500 text-sm">Review</span>
-                        </span>
+                      <img alt="testimonial" src="https://dummyimage.com/108x108"
+                        class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+                      <span class="flex-grow flex flex-col pl-4">
+                        <span class="title-font font-medium text-gray-900">Nazima Mam</span>
+                        <span class="text-gray-500 text-sm">CSE Faculty</span>
+                      </span>
                     </a>
                 </div>
             </div>
@@ -235,12 +243,7 @@
     <div class="bg-gray-100">
         <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
-                    viewBox="0 0 24 24">
-                    <path
-                        d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
+              <img src="../static/LogoS.png" alt="Logo" class="w-10 h-10 rounded-full">
                 <span class="ml-3 text-xl">Fake News Detection</span>
             </a>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
